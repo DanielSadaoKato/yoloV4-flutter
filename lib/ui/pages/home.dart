@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:object_detection/services/auth_service.dart';
 import 'package:object_detection/ui/pages/detector_page.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
+  static const route = '/home';
   const HomePage({Key key}) : super(key: key);
 
   @override
@@ -16,6 +19,41 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.exit_to_app),
+            tooltip: 'Sair',
+            onPressed: () => showDialog<String>(
+              context: context,
+              builder: (BuildContext context) => AlertDialog(
+                title: const Text('Logout'),
+                content: const Text('DESEJA SAIR DO APLICATIVO?'),
+                actions: <Widget>[
+                  TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Color.fromARGB(255, 0, 102, 177),
+                    ),
+                    child: const Text(
+                      'SIM',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    onPressed: () => context.read<AuthService>().logout(),
+                  ),
+                  TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Color.fromARGB(255, 0, 102, 177),
+                    ),
+                    child: const Text(
+                      'NÃO',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    onPressed: () => Navigator.pop(context, 'NÃO'),
+                  ),
+                ],
+              ),
+            ),
+          )
+        ],
         systemOverlayStyle: SystemUiOverlayStyle(
           statusBarColor: Colors.black,
         ),

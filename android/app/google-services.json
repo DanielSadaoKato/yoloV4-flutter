@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "214014596112",
+    "project_id": "embraer-rebit",
+    "storage_bucket": "embraer-rebit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214014596112:android:3ecdd3736c75a6751a6695",
+        "android_client_info": {
+          "package_name": "com.embraer.rebitadeira"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214014596112-p4o1s74l8jlektk5v326p23ct1469dl6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.embraer.rebitadeira",
+            "certificate_hash": "29053a09d6ea9a5f265c38edf4eeee3baede8ee0"
+          }
+        },
+        {
+          "client_id": "214014596112-b8eth21saf03k1pdduhqhd0lg9rgefb2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzxlPD5p-E6NBLPnc3zhlLRXjbkEFCw-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214014596112-b8eth21saf03k1pdduhqhd0lg9rgefb2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214014596112:android:9fccf66c24fcf53c1a6695",
+        "android_client_info": {
+          "package_name": "com.example.object_detection_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214014596112-b8eth21saf03k1pdduhqhd0lg9rgefb2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzxlPD5p-E6NBLPnc3zhlLRXjbkEFCw-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214014596112-b8eth21saf03k1pdduhqhd0lg9rgefb2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -7,6 +7,7 @@ import '../components/camera_view.dart';
 
 /// [DetectorPage] stacks [CameraView] and [BoxWidget]s with bottom sheet for stats
 class DetectorPage extends StatefulWidget {
+  static const route = '/detector';
   @override
   _DetectorPageState createState() => _DetectorPageState();
 }
